@@ -46,7 +46,7 @@ project/
 
     finally fs.readfile(){fileSystem} read all the files and i used it such that it return (error, data) call back for any error handling
 
-## For instatallation $ setup
+## For instatallation & setup
 
     -> clone the server
     -> npm i (for node_modules and package-lock.json)
