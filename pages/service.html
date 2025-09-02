@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Laundry Mart, a premier laundry service. We make laundry simple, fast and affordable. From wash and fold to dry cleaning and steam pressing, our services ensure your clothes are fresh and spotless. With free pickup and delivery, eco-friendly cleaning methods, and same-day express-options, e bring convenience right to your doorstep. Perfect for busy professionals, students and families.">
+    <title>Laundry Mart</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/images/logo.png" alt="Laundry Mart Logo">
+            </div>
+
+            <ul class="nav-link">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/about-us">About-us</a></li>
+                <li><a href="/contact-us">Contact-us</a></li>
+            </ul>
+
+            <div class="btn-nav">
+                <button class="userName">UserName</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="service-container" id="Services">
+
+            <div class="service-head box">
+                <h1>Our Services</h1>
+                <p>Click on the Add to Cart Button to Add the Services to Your Cart</p>
+
+
+                <div class="service dry-cleaning">
+                    <h5><i class="fas fa-tshirt"></i>Dry Cleaning - <span class="green">₹200</span></h5>
+                    <div class="service-btn">
+                        <button class="btn btn-primary" onclick="toggleBtn(this, 'Dry Cleaning', 200)"><i
+                                class="fas fa-cart-plus"></i>AddItem</button>
+
+                    </div>
+                </div>
+                <div class="service wash-fold">
+                    <h5><i class="fas fa-soap"></i>Wash & Fold - <span class="green">₹100</span></h5>
+                    <div class="service-btn">
+                        <button class="btn btn-primary" onclick="toggleBtn(this, 'Wash & Fold', 100)"><i
+                                class="fas fa-cart-plus"></i>AddItem</button>
+
+                    </div>
+                </div>
+                <div class="service iron">
+                    <h5><i class="fas fa-fire"></i> Ironing - <span class="green">₹30</span></h5>
+                    <div class="service-btn">
+                        <button class="btn btn-primary " onclick="toggleBtn(this, 'Ironing', 30)"><i
+                                class="fas fa-cart-plus"></i>AddItem</button>
+
+                    </div>
+                </div>
+                <div class="service stain">
+                    <h5><i class="fas fa-spray-can"></i>Stain removal - <span class="gold">₹500</span></h5>
+                    <div class="service-btn">
+                        <button class="btn btn-primary" onclick="toggleBtn(this, 'Stain removal', 500)"><i
+                                class="fas fa-cart-plus"></i>AddItem</button>
+
+                    </div>
+                </div>
+                <div class="service leather">
+                    <h5><i class="fas fa-shoe-prints"></i>Leather and Suede Cleaning - <span class="gold">₹999</span>
+                    </h5>
+                    <div class="service-btn">
+                        <button class="btn btn-primary" onclick="toggleBtn(this, 'Leather and Suede Cleaning', 999)"><i
+                                class="fas fa-cart-plus"></i>AddItem</button>
+
+                    </div>
+                </div>
+                <div class="service wed">
+                    <h5><i class="fas fa-ring"></i>Wedding Dress Cleaning - <span class="gold">₹2800</span></h5>
+                    <div class="service-btn">
+                        <button class="btn btn-primary" onclick="toggleBtn(this, 'Wedding Dress Cleaning', 2800)"><i
+                                class="fas fa-cart-plus"></i>AddItem</button>
+
+                    </div>
+                </div>
+
+                <div class="msg"><i class="fas fa-info-circle" style="color: blue; margin-right: 5px;"></i>Add Items to
+                    the Cart and book now</div>
+            </div>
+
+            <div class="box">
+                <div class="cart ">
+                    <div class="cart-head">
+                        <h2>Added Items</h2>
+                    </div>
+                    <div>
+                        <table id="cart-table">
+                            <thead>
+
+                                <tr>
+                                    <td>S.No</td>
+                                    <td colspan="7">Item</td>
+                                    <td>Price</td>
+                                </tr>
+
+                            </thead>
+                            <tbody id="cart-items">
+                                <tr id="empty-row">
+                                    <td colspan="9" class="empty-msg">No items added</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="total">
+                            <span>Total:</span>
+                            <span id="total-amount">0</span>
+                        </div>
+                    </div>
+                    <div class="clearCart-btn">
+                        <button onclick="clearCart()" class="btn btn-danger">ClearCart</button>
+                    </div>
+                </div>
+
+                <div class="book-cont" id="booking">
+                    <div>
+                        <h2>Book Now</h2>
+
+                        <form id="booking-form">
+                            <div class="book">
+                                <label for="name">Full Name</label>
+                                <input type="text" name="name" id="name" placeholder="Enter full name" required>
+                            </div>
+                            <div class="book">
+                                <label for="phone">Phone No.</label>
+                                <input type="phone" name="phone" id="phone" placeholder="Enter Phone No." required>
+                            </div>
+                            <div class="book">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="btn-div">
+                                <button type="submit" class="btn-book">Book Now</button>
+                            </div>
+                            <div class="msg">
+                                <p id="confirmation-message"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            (function(){
+            emiljs.init("UuUiDuWN7zTYSPDM2");
+        })();
+        </script>
+    <script src="/script.js"></script>    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
