@@ -4,24 +4,31 @@ It's a simple http server built with node to serve the static files (html, css, 
 
 ## Structure
 
-project
-    => pages/ # HTML pages
-         -> nav
-         -> home
-         -> aboutUs
-         -> contautUs
-         -> services
-         -> error
-
-    => public/ # Serves the static file
-         -> images
-         -> script.js
-         -> style.css
-    
-    => index.js
-    => .env
-    => package.json
-
+```
+project/
+├─ pages/
+│  ├─ aboutUs.html
+│  ├─ contactUs.html
+│  ├─ Error.html
+│  ├─ home.html
+│  ├─ nav.html
+│  └─ service.html
+├─ public/
+│  ├─ images/
+│  │  ├─ afford-price.png
+│  │  ├─ delivery.png
+│  │  ├─ laundry.png
+│  │  ├─ logo.png
+│  │  └─ support.png
+│  ├─ script.js
+│  └─ style.css
+├─ .env
+├─ .gitignore
+├─ index.js
+├─ package-lock.json
+├─ package.json
+└─ readme.md
+```
 ## How it works
 
 ### Creating the server
