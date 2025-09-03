@@ -1,13 +1,21 @@
+// Import the required modules
+
+// To create the server
 const http = require('http')
+// To read the file
 const fs = require('fs');
+// To hndle the paths
 const path = require('path');
+// For env Variables(secured info)
 const dotenv = require('dotenv')
 dotenv.config()
 const PORT = process.env.PORT;
 
+// directory for pages and static files
 const pagesDirectory = path.join(__dirname, 'pages');
 const publicDirectory = path.join(__dirname, 'public') 
 
+// MimeTypes to tell the browser about the static file when served on server start
 const fileTypes = {
     ".html": "text/html",
     ".css": "text/css",
@@ -25,7 +33,8 @@ const app = http.createServer((req,res)=>{
         req.url.startsWith('/images')
     ){
         filePath = path.join(publicDirectory, req.url)
-    } else {
+    } 
+    else {
         // Routes for HTML pages
         switch (req.url) {
             case '/':
@@ -60,18 +69,22 @@ const app = http.createServer((req,res)=>{
         
     }
 
+    // file extensions and there content type (pages)
     const ext = path.extname(filePath);
     const contentType = fileTypes[ext] || 'text/html';
 
+    // read file
     fs.readFile(filePath, (error, data)=>{
+            // handle errors
             if(error){
                 res.writeHead(500, {"Content-Type": "text/plain"});
                 res.end('500 - Internal server Error')
-            } else{
-
+            } 
+            else{
+                // logs req url and res method
                 console.log(`${req.url}-> ${res.statusCode}`);
                 
-
+                // gives the data with the correct content type 
                 res.writeHead(res.statusCode, {"Content-Type": contentType})
                 res.end(data)
             }
@@ -79,6 +92,7 @@ const app = http.createServer((req,res)=>{
 
 })
 
+// start the server and logs the port
 app.listen(PORT, ()=>{
     console.log(`The Laundry Mart page is up and running on http://localhost:${PORT}`);
     
