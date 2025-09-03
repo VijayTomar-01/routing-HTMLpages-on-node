@@ -71,38 +71,46 @@ project/
     Note -> Different from MIME served at the start of the server containg differnt static files(css, js, images etc)
 
     finally fs.readfile(){fileSystem} read all the files and i used it such that it return (error, data) call back for any error handling
+    
+    Routing is implemented with a simple switch statement:
+        /home -> home.html
+        /about-us -> aboutUs.html
+        /contact-us -> contactUs.html
+        /services -> service.html
+        /nav -> nav.html
+    Any invalid route → Error.html (custom 404 page)
 
 ## Routes Tested
 
 ### Nav Route
-[Nav Page](./serverTestScreenshots/navTests/navPage.png)
-[Nav Network](./serverTestScreenshots/navTests/navNetworkRespons.png)
-[Nav Req/Res](./serverTestScreenshots/navTests/reqResWithMethodAndUrl.png)
+![Nav Page](./serverTestScreenshots/navTests/navPage.png)
+![Nav Network](./serverTestScreenshots/navTests/navNetworkRespons.png)
+![Nav Req/Res](./serverTestScreenshots/navTests/reqResWithMethodAndUrl.png)
 
 ### Home Route
-[Home Page](./serverTestScreenshots/homeTests/homeTest.png)
-[Home Network](./serverTestScreenshots/homeTests/homeNetworkTest.png)
-[Home Req/Res](./serverTestScreenshots/homeTests/reqResMethodUrl.png)
+![Home Page](./serverTestScreenshots/homeTests/homeTest.png)
+![Home Network](./serverTestScreenshots/homeTests/homeNetworkTest.png)
+![Home Req/Res](./serverTestScreenshots/homeTests/reqResMethodUrl.png)
 
 ### Service Route
-[Service Page](./serverTestScreenshots/serviceTests/servicesTest.png)
-[Service Network](./serverTestScreenshots/serviceTests/servicesNetworkTest.png)
-[Service Req/Res](./serverTestScreenshots/serviceTests/resReqMethodUrl.png)
+![Service Page](./serverTestScreenshots/serviceTests/servicesTest.png)
+![Service Network](./serverTestScreenshots/serviceTests/servicesNetworkTest.png)
+![Service Req/Res](./serverTestScreenshots/serviceTests/resReqMethodUrl.png)
 
 ### Contact Route
-[Contact Page](./serverTestScreenshots/contactTest/contactTest.png)
-[Contact Network](./serverTestScreenshots/contactTest/contactNetworkTest.png)
-[Contact Req/Res](./serverTestScreenshots/contactTest/resreqMethodUrl.png)
+![Contact Page](./serverTestScreenshots/contactTest/contactTest.png)
+![Contact Network](./serverTestScreenshots/contactTest/contactNetworkTest.png)
+![Contact Req/Res](./serverTestScreenshots/contactTest/resreqMethodUrl.png)
 
 ### About Route
-[About Page](./serverTestScreenshots/AboutusTests/aboutusTest.png)
-[About Network](./serverTestScreenshots/AboutusTests/aboutusNetworkTest.png)
-[About Req/Res](./serverTestScreenshots/AboutusTests/reqResMethodUrl.png)
+![About Page](./serverTestScreenshots/AboutusTests/aboutusTest.png)
+![About Network](./serverTestScreenshots/AboutusTests/aboutusNetworkTest.png)
+![About Req/Res](./serverTestScreenshots/AboutusTests/reqResMethodUrl.png)
 
 ### Error Route
-[Error Page](./serverTestScreenshots/errorTest/ErrorTest.png)
-[Error Network](./serverTestScreenshots/errorTest/ErrorNetworkTest.png)
-[Error Req/Res](./serverTestScreenshots/errorTest/resReqMethodUrl.png)
+![Error Page](./serverTestScreenshots/errorTest/ErrorTest.png)
+![Error Network](./serverTestScreenshots/errorTest/ErrorNetworkTest.png)
+![Error Req/Res](./serverTestScreenshots/errorTest/resReqMethodUrl.png)
 
 
 ## For instatallation & setup
