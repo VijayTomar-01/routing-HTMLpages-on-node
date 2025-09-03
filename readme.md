@@ -83,9 +83,9 @@ project/
 ## Routes Tested
 
 ### Nav Route
-![Nav Page](./serverTestScreenshots/navTests/navPage.png)
-![Nav Network](./serverTestScreenshots/navTests/navNetworkRespons.png)
-![Nav Req/Res](./serverTestScreenshots/navTests/reqResWithMethodAndUrl.png)
+[Nav Page](./serverTestScreenshots/navTests/navPage.png)
+[Nav Network](./serverTestScreenshots/navTests/navNetworkRespons.png)
+[Nav Req/Res](./serverTestScreenshots/navTests/reqResWithMethodAndUrl.png)
 
 ### Home Route
 [Home Page](./serverTestScreenshots/homeTests/homeTest.png)
