@@ -88,29 +88,29 @@ project/
 ![Nav Req/Res](./serverTestScreenshots/navTests/reqResWithMethodAndUrl.png)
 
 ### Home Route
-![Home Page](./serverTestScreenshots/homeTests/homeTest.png)
-![Home Network](./serverTestScreenshots/homeTests/homeNetworkTest.png)
-![Home Req/Res](./serverTestScreenshots/homeTests/reqResMethodUrl.png)
+[Home Page](./serverTestScreenshots/homeTests/homeTest.png)
+[Home Network](./serverTestScreenshots/homeTests/homeNetworkTest.png)
+[Home Req/Res](./serverTestScreenshots/homeTests/reqResMethodUrl.png)
 
 ### Service Route
-![Service Page](./serverTestScreenshots/serviceTests/servicesTest.png)
-![Service Network](./serverTestScreenshots/serviceTests/servicesNetworkTest.png)
-![Service Req/Res](./serverTestScreenshots/serviceTests/resReqMethodUrl.png)
+[Service Page](./serverTestScreenshots/serviceTests/servicesTest.png)
+[Service Network](./serverTestScreenshots/serviceTests/servicesNetworkTest.png)
+[Service Req/Res](./serverTestScreenshots/serviceTests/resReqMethodUrl.png)
 
 ### Contact Route
-![Contact Page](./serverTestScreenshots/contactTest/contactTest.png)
-![Contact Network](./serverTestScreenshots/contactTest/contactNetworkTest.png)
-![Contact Req/Res](./serverTestScreenshots/contactTest/resreqMethodUrl.png)
+[Contact Page](./serverTestScreenshots/contactTest/contactTest.png)
+[Contact Network](./serverTestScreenshots/contactTest/contactNetworkTest.png)
+[Contact Req/Res](./serverTestScreenshots/contactTest/resreqMethodUrl.png)
 
 ### About Route
-![About Page](./serverTestScreenshots/AboutusTests/aboutusTest.png)
-![About Network](./serverTestScreenshots/AboutusTests/aboutusNetworkTest.png)
-![About Req/Res](./serverTestScreenshots/AboutusTests/reqResMethodUrl.png)
+[About Page](./serverTestScreenshots/AboutusTests/aboutusTest.png)
+[About Network](./serverTestScreenshots/AboutusTests/aboutusNetworkTest.png)
+[About Req/Res](./serverTestScreenshots/AboutusTests/reqResMethodUrl.png)
 
 ### Error Route
-![Error Page](./serverTestScreenshots/errorTest/ErrorTest.png)
-![Error Network](./serverTestScreenshots/errorTest/ErrorNetworkTest.png)
-![Error Req/Res](./serverTestScreenshots/errorTest/resReqMethodUrl.png)
+[Error Page](./serverTestScreenshots/errorTest/ErrorTest.png)
+[Error Network](./serverTestScreenshots/errorTest/ErrorNetworkTest.png)
+[Error Req/Res](./serverTestScreenshots/errorTest/resReqMethodUrl.png)
 
 
 ## For instatallation & setup
