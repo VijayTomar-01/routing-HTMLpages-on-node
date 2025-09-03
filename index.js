@@ -68,6 +68,10 @@ const app = http.createServer((req,res)=>{
                 res.writeHead(500, {"Content-Type": "text/plain"});
                 res.end('500 - Internal server Error')
             } else{
+
+                console.log(`${req.url}-> ${res.statusCode}`);
+                
+
                 res.writeHead(res.statusCode, {"Content-Type": contentType})
                 res.end(data)
             }

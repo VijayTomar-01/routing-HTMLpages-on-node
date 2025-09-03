@@ -22,12 +22,38 @@ project/
 │  │  └─ support.png
 │  ├─ script.js
 │  └─ style.css
+├─ serverTestScreenshots/
+│  ├─ AboutusTests/
+│  │  ├─ aboutusNetworkTest.png
+│  │  ├─ aboutusTest.png
+│  │  └─ reqResMethodUrl.png
+│  ├─ contactTest/
+│  │  ├─ contactNetworkTest.png
+│  │  ├─ contactTest.png
+│  │  └─ resreqMethodUrl.png
+│  ├─ errorTest/
+│  │  ├─ ErrorNetworkTest.png
+│  │  ├─ ErrorTest.png
+│  │  └─ resReqMethodUrl.png
+│  ├─ homeTests/
+│  │  ├─ homeNetworkTest.png
+│  │  ├─ homeTest.png
+│  │  └─ reqResMethodUrl.png
+│  ├─ navTests/
+│  │  ├─ navNetworkRespons.png
+│  │  ├─ navPage.png
+│  │  └─ reqResWithMethodAndUrl.png
+│  └─ serviceTests/
+│     ├─ resReqMethodUrl.png
+│     ├─ servicesNetworkTest.png
+│     └─ servicesTest.png
 ├─ .env
 ├─ .gitignore
 ├─ index.js
 ├─ package-lock.json
 ├─ package.json
 └─ readme.md
+
 ```
 ## How it works
 
@@ -45,6 +71,39 @@ project/
     Note -> Different from MIME served at the start of the server containg differnt static files(css, js, images etc)
 
     finally fs.readfile(){fileSystem} read all the files and i used it such that it return (error, data) call back for any error handling
+
+## Routes Tested
+
+### Nav Route
+[Nav Page](./serverTestScreenshots/navTests/navPage.png)
+[Nav Network](./serverTestScreenshots/navTests/navNetworkRespons.png)
+[Nav Req/Res](./serverTestScreenshots/navTests/reqResWithMethodAndUrl.png)
+
+### Home Route
+[Home Page](./serverTestScreenshots/homeTests/homeTest.png)
+[Home Network](./serverTestScreenshots/homeTests/homeNetworkTest.png)
+[Home Req/Res](./serverTestScreenshots/homeTests/reqResMethodUrl.png)
+
+### Service Route
+[Service Page](./serverTestScreenshots/serviceTests/servicesTest.png)
+[Service Network](./serverTestScreenshots/serviceTests/servicesNetworkTest.png)
+[Service Req/Res](./serverTestScreenshots/serviceTests/resReqMethodUrl.png)
+
+### Contact Route
+[Contact Page](./serverTestScreenshots/contactTest/contactTest.png)
+[Contact Network](./serverTestScreenshots/contactTest/contactNetworkTest.png)
+[Contact Req/Res](./serverTestScreenshots/contactTest/resreqMethodUrl.png)
+
+### About Route
+[About Page](./serverTestScreenshots/AboutusTests/aboutusTest.png)
+[About Network](./serverTestScreenshots/AboutusTests/aboutusNetworkTest.png)
+[About Req/Res](./serverTestScreenshots/AboutusTests/reqResMethodUrl.png)
+
+### Error Route
+[Error Page](./serverTestScreenshots/errorTest/ErrorTest.png)
+[Error Network](./serverTestScreenshots/errorTest/ErrorNetworkTest.png)
+[Error Req/Res](./serverTestScreenshots/errorTest/resReqMethodUrl.png)
+
 
 ## For instatallation & setup
 

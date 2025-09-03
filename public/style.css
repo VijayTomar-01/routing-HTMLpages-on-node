@@ -652,6 +652,24 @@ input{
 .copy p{
     opacity: 0.4;
 }
+.Error{
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 10px 20px;
+    background-color: #000;
+    height: 100vh;
+}
+.Error h1{
+    text-align: center;
+    color: red;
+    padding: 14px;
+}
+.Error a{
+    text-decoration: none;
+    color: #28a745;
+
+}
+
 
 
 
